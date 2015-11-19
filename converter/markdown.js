@@ -68,8 +68,10 @@ var parseStrong = function(str) {
   var stra = [];
   while ((stra = codeRegExp.exec(str)) !== null) {
     str = str.replace(stra[0], '<pre>' + stra[1] + '</pre>');
+  }
   return str;
  }
+
  var parseBlockQuote = function(str) {
   var quoteRegExp = /\:\"(.*?)\"\:/
   var stra = [];
